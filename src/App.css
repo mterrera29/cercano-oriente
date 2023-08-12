@@ -1,0 +1,166 @@
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--fontClaro);
+}
+.mainGame{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--fontClaro);
+  margin-top: 20px;
+}
+.imageContainer{
+  position: relative;
+}
+.image{
+  position: relative;
+  min-width: 400px;
+  max-height: 380px;
+  border-radius: 14px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow:4px -4px var(--claro);
+  z-index: 1;
+}
+.answerHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: var(--oscuro);
+  top: 0px;
+}
+
+.respuestaIcon{
+  width: 45px;
+  height: auto;
+  position: absolute;
+  top:2px;
+  right: 5px;
+  z-index: 5;
+}
+.answerImg{
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+}
+.image >img{
+  width: 100%; /* La imagen ocupará el 100% del ancho del div contenedor */
+  height: 100%; /* La imagen ocupará el 100% de la altura del div contenedor */
+  object-fit: cover; /* La imagen se ajustará al ancho y alto del contenedor manteniendo su relación de aspecto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.correctImg{
+  position: absolute;
+  font-size: 50px;
+  animation: bounceIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 0.5s;
+  color:#219221
+}
+.questions{
+  color: var(--fontClaro);
+  height: fit-content;
+  border-radius: 14px;
+  margin: 5px;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+  font-size: 18px;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.inputForm > *{
+  margin: 5px;
+}
+
+.input-style {
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
+
+.input-style:focus {
+  border-color: var(--oscuro);
+  box-shadow: 0 0 0 0.2rem var(--claro);
+}
+
+.buttonNext{
+  position: absolute;
+  bottom: 10px;
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+  height: min-content;
+  border-radius: 14px;
+  margin: 5px;
+  text-align: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  font-size: 18px;
+}
+.buttonNext:hover{
+  background-color: var(--oscuroHover);
+}
+
+.buttonNext h3{
+  margin: 5px;
+}
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content:right;
+  align-items: center;
+  flex-direction: row;
+}
+.buttonPass{
+  width: 100px;  
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+  padding: 5px;
+  border-radius: 14px;
+  margin: 5px;
+  text-align: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  font-size: 18px;
+}
+.buttonPass:hover{
+  background-color: #6d6c6d;
+}
+@media screen and (max-width: 1000px){
+  .mainGame{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .mainGame{
+    width: 95%;
+  }
+  .image{
+    min-width: 200px;
+  }
+}
