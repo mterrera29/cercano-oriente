@@ -6,6 +6,7 @@ import confetti from 'canvas-confetti'
 import ModalWin from './components/ModalWin';
 import correct from "./Images/correct2.png"
 import incorrect from "./Images/incorrect2.png"
+import Time from './components/Time';
 
 function App() {
   const [name, setName] = useState('');
@@ -15,8 +16,9 @@ function App() {
   const [notCorrect, setNotCorrect] = useState(false);
   const [puntos, setPuntos] = useState(0)
   const [win, setWin] = useState(false)
+  const [isReload, setIsReload] = useState(false)
 
-  const cantidadPreg = 16
+  const cantidadPreg = 3
   const image = SUMERIOS.consignas[index].img
   const answer =  SUMERIOS.consignas[index].answer
   const headerName = name.replace(/(^\w{1})|(\s+\w{1})/g, (letra) => letra.toUpperCase())
@@ -57,6 +59,7 @@ function App() {
     setIndex(0)
     setWin(false)
     setPuntos(0)
+    setIsReload(prevState => !prevState)
   } 
 
   useEffect(() => {
@@ -138,6 +141,7 @@ function App() {
         </section>
       </main>
     }
+    <Time win={win} isReload={isReload} />
     </>
   )
 }

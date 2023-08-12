@@ -12,7 +12,8 @@
   justify-content: center;
   background-color: #242424;
   --claro:rgb(128, 128, 128, .8);
-  --oscuro:rgb(66, 65, 66, .8);
+  --oscuro:rgb(66, 65, 66, .8);  
+  --warning:rgba(124, 15, 15, 0.8);
   --oscuroHover: #6d6c6d;
   --fontClaro: #ffffffde ;
   --bgApp:url("./Images/sumerios2.jpg");

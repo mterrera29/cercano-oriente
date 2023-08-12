@@ -18,7 +18,7 @@ import img17 from "./Images/juego/ur.jpg"
 
 
 export const SUMERIOS = {
-  title:"Los Sumerios",
+  title:"Mesopotamia",
   consignas:[
     {
       question: "Material del que estaban hechas las tablas donde los sumerios escribían",
