@@ -1,0 +1,66 @@
+.mainGameRoot{
+  width: 60%;
+  height: 100;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--fontClaro);
+  margin-top: 20px;
+}
+.mainTitle{
+  font-size: 70px;
+  color: var(--fontClaro);
+  line-height: 1;
+  margin: 10px;
+  top: 30px;
+}
+
+.mainContainer{
+  width: 60%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--fontClaro);
+  position: relative;
+}
+
+.btnMain{
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+  height: min fit-content;
+  border-radius: 14px;
+  text-align: center;
+  padding: 0.3rem;
+  cursor: pointer;
+  max-width: 300px;
+  z-index: 4;
+  color: white;
+  font-size: 20px;
+  margin: 15px;
+}
+.btnMain:hover{
+  background-color: #6d6c6d;
+}
+.btnMain:visited {
+  text-decoration: none;
+}
+.linkWithoutStyles {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: inherit; /* Usa el color heredado (normalmente el color del texto) */
+  /* Si deseas eliminar otros estilos, como bordes o fondos, puedes hacerlo aquí */
+}
+
+@media screen and (max-width: 1000px){
+  .mainTitle{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .mainTitle h1{
+    font-size: 50px;
+  }
+}

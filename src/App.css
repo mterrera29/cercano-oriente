@@ -5,6 +5,9 @@
   align-items: center;
   color: var(--fontClaro);
 }
+.header h1{
+  font-size: 50px;
+}
 .mainGame{
   width: 60%;
   margin: auto;
@@ -21,6 +24,7 @@
 .image{
   position: relative;
   min-width: 400px;
+  max-width: 500px;
   max-height: 320px;
   border-radius: 14px;
   margin: 5px;
@@ -33,13 +37,13 @@
   z-index: 1;
 }
 .answerHeader{
+  width: 100%;
+  height: 40px;
+  background-color: var(--oscuro);
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 43px;
-  background-color: var(--oscuro);
-  top: 0px;
 }
 
 .respuestaIcon{
@@ -54,6 +58,7 @@
   position: relative;
   text-align: center;
   font-size: 30px;
+  margin: 10px
 }
 .image >img{
   width: 100%; /* La imagen ocupará el 100% del ancho del div contenedor */

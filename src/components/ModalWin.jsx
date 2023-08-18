@@ -1,4 +1,5 @@
 import "./ModalWin.css"
+import { Link } from "react-router-dom"
 
 const ModalWin = ({puntos, preguntasCant, reloaderGame}) => {
 
@@ -22,7 +23,9 @@ const ModalWin = ({puntos, preguntasCant, reloaderGame}) => {
           <h4 >minutos.</h4>
           </section>
             <div className='btnWinner' onClick={handleReload}>Rehacer</div>
+            <Link to="/">
             <div className='btnWinner' onClick={()=>{}} >Guardar puntaje</div>
+            </Link>
         </div>
       </section>
   )
