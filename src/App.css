@@ -86,7 +86,7 @@
   padding: 0.5rem;
   background-color: var(--oscuro);
   box-shadow:4px -4px var(--claro);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .inputs{
@@ -98,13 +98,14 @@
 }
 .inputForm > *{
   margin: 5px;
+  font-size: 20px;
 }
 
 .input-style {
   padding: 5px;
   border: 2px solid #ccc;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 20px;
   color: #555;
   outline: none;
 }
