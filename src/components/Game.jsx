@@ -25,7 +25,7 @@ function Game() {
 
   const consignasData= shuffledConsignas
 
-  const cantidadPreg = consignasData.length -1
+  const cantidadPreg = consignasData.length 
   ///const cantidadPreg = 3
   const image = consignasData[index].img
   const answer =  consignasData[index].answer
@@ -42,11 +42,11 @@ function Game() {
     }, 1500);
   }, [index])
 
-  useEffect(() => {
+  /* useEffect(() => {
     if (index === cantidadPreg) {
       setWin(true);
     }
-  }, [index, cantidadPreg]);
+  }, [index, cantidadPreg]); */
 
   const passQuestion = ()=>{
     setNotCorrect(true)
@@ -111,7 +111,7 @@ function Game() {
               (isCorrect || notCorrect) &&
               <div
                 className='buttonNext'
-                onClick={()=>nextQuestion()}
+                onClick={()=>index === consignasData.length-1?setWin(true):nextQuestion()}
               >
                 <h3>Siguiente</h3>
               </div>

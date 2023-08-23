@@ -1,7 +1,7 @@
 import img1 from "./Images/juego/arcilla.jpg"
 import img2 from "./Images/juego/astronomia.jpg"
 import img3 from "./Images/juego/canales.jpg"
-import img4 from "./Images/juego/cercano oriente.png"
+import img4 from "./Images/juego/cercano oriente.jpg"
 import img5 from "./Images/juego/cuña.jpg"
 import img6 from "./Images/juego/cuneiforme.jpg"
 import img7 from "./Images/juego/escribas.jpg"
