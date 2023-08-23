@@ -106,7 +106,7 @@ export const SUMERIOS = {
       img: img16
     },
     {
-      question: "Primera de las ciudades sumerias, conocida por las fomosas ruinas de su Zigurat",
+      question: "Primera de las ciudades sumerias, conocida por las famosas ruinas de su Zigurat",
       answer: "ur",
       img: img17
     },
