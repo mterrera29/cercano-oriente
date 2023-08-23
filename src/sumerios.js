@@ -91,7 +91,7 @@ export const SUMERIOS = {
       img: img13
     },
     {
-      question: "Importante río ubicado en la región de Cercano Oriente",
+      question: "Importante río ubicado en la Medialuna Fértil",
       answer: "nilo",
       img: img14
     },
