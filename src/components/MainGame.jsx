@@ -15,6 +15,10 @@ const MainGame = () => {
         <div className="btnMain" >Iniciar Juego!
         </div>
       </Link>
+      <Link to="/points" className="linkWithoutStyles">
+        <div className="btnMain" >Puntajes
+        </div>
+      </Link>
       </section>
     </main>
     </>

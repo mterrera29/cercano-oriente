@@ -76,9 +76,45 @@
   border: 1px grey solid;
   text-decoration: none;
 }
+.btnWinnerExit{
+  background-color: var(--warning);
+  box-shadow:4px -4px var(--claro);
+  height: min fit-content;
+  border-radius: 14px;
+  text-align: center;
+  padding: 0.2rem;
+  cursor: pointer;
+  width: 150px;
+  z-index: 4;
+  color: white;
+  border: 1px grey solid;
+  text-decoration: none;
+  margin-top: 15px;
+}
 
 .btnWinner:hover{
   background-color: #6d6c6d;
+}
+.btnWinner[disabled] {
+  /* Estilos para el botón deshabilitado */
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.btnWinner:hover[disabled] {
+  background-color:var(--oscuro);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+.inputFormModal {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inputFormModal > *{
+  margin: 5px;
 }
 
 @media screen and (max-width: 1000px){

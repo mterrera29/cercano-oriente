@@ -42,7 +42,8 @@ const Time = ({win, isReload}) => {
 
   useEffect(() => {
     const saveLocal = () => {
-      localStorage.setItem('puntos', JSON.stringify(`${minutos}:${segundos}`));
+      localStorage.setItem('minutos', JSON.stringify(`${minutos}`));
+      localStorage.setItem('segundos', JSON.stringify(`${segundos}`));
     };
     if(win){
       handlePauseResume()

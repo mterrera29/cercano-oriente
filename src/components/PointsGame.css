@@ -1,0 +1,33 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 8px;
+  text-align: center;
+}
+.modalPoints{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width:min-content;
+  height: min-content;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  z-index: 3;
+  background-color: var(--oscuro);
+  box-shadow:4px -4px var(--claro);
+}

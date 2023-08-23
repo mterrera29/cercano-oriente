@@ -12,7 +12,7 @@ function Game() {
   const [shuffledConsignas, setShuffledConsignas] = useState(SUMERIOS.consignas)
   const [name, setName] = useState('');
   const [index, setIndex] = useState(0);
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const [isCorrect, setIsCorrect] = useState(false);
   const [notCorrect, setNotCorrect] = useState(false);
   const [puntos, setPuntos] = useState(0)
@@ -25,7 +25,8 @@ function Game() {
 
   const consignasData= shuffledConsignas
 
-  const cantidadPreg = consignasData.length -1
+  ///const cantidadPreg = consignasData.length -1
+  const cantidadPreg = 3
   const image = consignasData[index].img
   const answer =  consignasData[index].answer
   const headerName = name.replace(/(^\w{1})|(\s+\w{1})/g, (letra) => letra.toUpperCase())
