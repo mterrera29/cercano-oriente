@@ -3,6 +3,9 @@ import "./MainGame.css"
 import "./PointsGame.css"
 import { getFirestore,  getDocs, collection, query, orderBy } from "firebase/firestore";
 import { useState, useEffect } from "react";
+import oro from "../Images/oro3.png"
+import plata from "../Images/plata3.png"
+import bronce from "../Images/bronce3.png"
 
 const PointsGame = () => {
   const [data,setData] = useState(undefined)
@@ -53,8 +56,11 @@ const PointsGame = () => {
               </thead>
               <tbody>
                 {data && data.map((document, index) => (
-                  <tr key={index}>
-                    <td>{index +1}</td>
+                  <tr key={index} style={index === 0? {color:"yellow", fontSize:"20px"}:index === 1?{color:"#d1d1d1", fontSize:"20px"}:index === 2?{color:"#e97d35", fontSize:"20px"}:{}} className="rowPoints">
+                    <td>
+                    {index === 0? <img className="winIcon" src={oro} alt="" />
+                      :index === 1? <img className="winIcon" src={plata} alt="" />:index === 2? <img className="winIcon" src={bronce} alt="" />: index +1}
+                    </td>
                     <td>{document.playerName}</td>
                     <td>{document.total}%</td>
                     <td>{`${document.minutos}:${document.segundos}`}</td>
