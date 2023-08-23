@@ -40,8 +40,8 @@ const PointsGame = () => {
 
   return (
     <>
-    <header className='mainTitle animate__animated animate__fadeInDown'>
-      <h1>Mesopotamia </h1>
+    <header className='mainTitle animate__animated animate__fadeInDown' style={{textAlign:"center"}}>
+      <h1>Mesopotamia</h1>
     </header>
     <main className='mainGame'>
         <article className="modalPoints">

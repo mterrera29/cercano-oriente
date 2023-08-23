@@ -25,8 +25,8 @@ function Game() {
 
   const consignasData= shuffledConsignas
 
-  ///const cantidadPreg = consignasData.length -1
-  const cantidadPreg = 3
+  const cantidadPreg = consignasData.length -1
+  ///const cantidadPreg = 3
   const image = consignasData[index].img
   const answer =  consignasData[index].answer
   const headerName = name.replace(/(^\w{1})|(\s+\w{1})/g, (letra) => letra.toUpperCase())
@@ -137,6 +137,9 @@ function Game() {
           }
         </section>
         <section className='menu'>
+        <div>
+           <h3>{index+1} de {cantidadPreg}</h3>
+        </div>
           {
             (!isCorrect && !notCorrect ) &&
           <div
