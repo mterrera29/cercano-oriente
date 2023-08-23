@@ -9,7 +9,6 @@ import bronce from "../Images/bronce3.png"
 
 const PointsGame = () => {
   const [data,setData] = useState(undefined)
-
   useEffect(() => {
     const db = getFirestore();
     const productCollection = collection(db, "points");
@@ -45,6 +44,8 @@ const PointsGame = () => {
     </header>
     <main className='mainGame'>
         <article className="modalPoints">
+          {
+            data?
             <table className="styled-table">
               <thead>
                 <tr>
@@ -68,6 +69,9 @@ const PointsGame = () => {
                 ))}
               </tbody>
             </table>
+            :
+            <h1 style={{textAlign:"center"}}>Cargando...</h1> 
+          }
         </article>
           <Link to="/" className="linkWithoutStyles">
             <div className="btnMain" >Volver
