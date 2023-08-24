@@ -31,7 +31,7 @@ export const SUMERIOS = {
       img: img1
     },
     {
-      question: "Ciencia que los sumerios inventaron para observar las estrellas",
+      question: "Ciencia que los sumerios inventaron a partir de la observación de las estrellas",
       answer: "astronomía",
       img: img2
     },
