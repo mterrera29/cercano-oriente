@@ -17,9 +17,9 @@ import img16 from "./Images/juego/tigris.jpg"
 import img17 from "./Images/juego/ur.jpg"
 import img18 from "./Images/juego/gilgamesh.jpg"
 import img19 from "./Images/juego/hammurabi.jpg"
-import img20 from "./Images/juego/sacerdotes.jpg"
+//import img20 from "./Images/juego/sacerdotes.jpg"
 import img21 from "./Images/juego/uruk.png"
-import img22 from "./Images/juego/sexagesimal.jpg"
+//import img22 from "./Images/juego/sexagesimal.jpg"
 
 
 export const SUMERIOS = {
@@ -118,19 +118,19 @@ export const SUMERIOS = {
       question: "Rey de la antigua mesopotamia, autor de uno de los códigos de leyes más antiguos, conocido por la Ley del Talión",
       answer: "hammurabi",
       img: img19
-    },{
+    },/* {
       question: "Grupo social más importante de la antigua Mesopotamia, encargados de gobernar, controlar la producción, y comunicarse con los dioses",
       answer: "sacerdotes",
       img: img20
-    },{
+    }, */{
       question: "Primera de las ciudades sumerias, reino del legendario rey Gilgamesh",
       answer: "uruk",
       img: img21
     },
-    {
+    /* {
       question: "Sistema de numeración utilizado por los sumerios con base en el número 60, usado hoy para contar las horas, minutos y segundos",
       answer: "sexagesimal",
       img: img22
-    },
+    }, */
   ]
 }
